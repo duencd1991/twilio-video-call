@@ -8,9 +8,9 @@ const Lobby = ({
   handleSubmit
 }) => {
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Enter a room</h2>
-      <div>
+    <form onSubmit={handleSubmit} className="lobby">
+      <h2>Join a room</h2>
+      <div className="row">
         <label htmlFor="name">Name:</label>
         <input
           type="text"
@@ -21,7 +21,7 @@ const Lobby = ({
         />
       </div>
 
-      <div>
+      <div className="row">
         <label htmlFor="room">Room name:</label>
         <input
           type="text"
@@ -31,7 +31,7 @@ const Lobby = ({
           required
         />
       </div>
-      <button type="submit">Submit</button>
+      <button className="btn-login" type="submit">Submit</button>
     </form>
   );
 };
